@@ -1,0 +1,7 @@
+﻿  background.c
+C:\Users\Alif\Downloads\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\background.c(69,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Alif\Downloads\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\background.c(52,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  main.c
+  Generating Code...
+C:\Users\Alif\Downloads\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\background.c(40,1): warning C4715: 'readSensor': not all control paths return a value
+  MechEng_201_PROS_to_C_Translator.vcxproj -> C:\Users\Alif\Downloads\MechEng_201_PROS_to_C_Translator\MechEng_201_PROS_to_C_Translator\x64\Debug\MechEng_201_PROS_to_C_Translator.exe
