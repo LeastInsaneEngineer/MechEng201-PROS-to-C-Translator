@@ -1,13 +1,13 @@
 // PROS to C Translator for UoA Mechanical / Mechatronical Engineering 201 Vex Project
 // Created by: Khalif Akmaloni
 // This translator is so you can emulate, compile and run functions for testing outside of MechEng201 lab sessions.
-
+// This file serves to define constants and initialise functions and libraries.
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 
-//time step of 50ms to match the Vex V5 brain
+// time step of 50ms to match the Vex V5 brain
 #define dT 0.05 // dT is in seconds. 0.05 = 50ms.
 
 // Encoders
@@ -31,10 +31,20 @@
 // math
 #define PI 3.14159265359 // Redundancy as PI from math.h sometimes does not work.
 
+// Left Motor performance compared to Right Motor
+// e.g. 0.909 means the left motor moves 90.9% the rate of the right motor.
+// define this value yourself to meet your bot's behaviour.
+#define left_gain 0.909;
+
 // Initiliase Base Functions
 double saturate(double input, double lower, double upper);
-int readSensor(int sensor, int enc[]);
-void resetEncoder(int encoder, int enc[]);
+int readSensor(int sensor);
+void resetEncoder(int encoder);
+void delay(int time);
+
+// Encoder Functions
+int get_enc(int name);
+void set_enc(int name, int tick);
 
 // Initialise motor emulator
-void motorPower(int name, int voltage, int enc[]);
+void motorPower(int name, int voltage);

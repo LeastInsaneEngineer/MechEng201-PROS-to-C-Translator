@@ -1,7 +1,7 @@
 // PROS to C Translator for UoA Mechanical / Mechatronical Engineering 201 Vex Project
 // Created by: Khalif Akmaloni
 // This translator is so you can emulate, compile and run functions for testing outside of MechEng201 lab sessions.
-
+// This file serves to define the base functions.
 #include "main.h"
 
 // Provided base functions are saturate, readSensor, and resetEncoder
@@ -23,33 +23,48 @@ double saturate(double input, double lower, double upper)
 	}
 }
 
-int readSensor(int sensor, int enc[])
+int readSensor(int sensor)
 {
 	if (sensor == 6) // left
 	{
-		return enc[1];
+		return get_enc(LeftEncoder);
 	}
 	else if (sensor == 5) // right
 	{
-		return enc[0];
+		return get_enc(RightEncoder);
 	}
 	else if (sensor == 9) // arm, not yet modeled.
 	{
-		return enc[2];
+		return get_enc(ArmEncoder);
+	}
+	else
+	{
+		// nothing
 	}
 }
 
-void resetEncoder(int encoder, int enc[])
+void resetEncoder(int encoder)
 {
-	enc[encoder] = 0;
+	set_enc(encoder,0);
+}
+
+void delay(int time)
+{
+	//does nothing lmao
 }
 
 
 // motorPower is emulated here
-void motorPower(int name, int voltage, int enc[])
+void motorPower(int name, int voltage)
 {
+	// old model that needs encoder array as input argument
 	char names[][18] = { {"Right Motor"}, {"Left Motor"},{"Arm Motor"} };
 	int ticks = (900 * (1000.0 / 12.0) / 60.0 * (voltage / 5000.0) * dT);
+
+	float gain = left_gain;
+
+	// new model
+	int temp = 0;
 
 	if (abs(voltage) <= 500)
 	{
@@ -61,18 +76,30 @@ void motorPower(int name, int voltage, int enc[])
 		// ArmMotor is currently unmodeled, but its input exists for compatability.
 		if (name == ArmMotor)
 		{
-			enc[2] = enc[2] + ticks;
+			//enc[2] = enc[2] + ticks;
 		}
 		else if (name == LeftMotor)
 		{
+			// old model, needs enc array as input argument
 			printf("%s voltage = %i\n", names[name], voltage);
-			ticks = (900 / 1.1 * (1000.0 / 12.0) / 60.0 * (voltage / 5000.0) * dT);
-			enc[name] = enc[name] + ticks;
+			ticks = (900 * gain * (1000.0 / 12.0) / 60.0 * (voltage / 5000.0) * dT);
+			//enc[name] = enc[name] + ticks;
+			//enc[0] = enc[0] + ticks;
+
+			// new model
+			temp = get_enc(LeftEncoder);
+			set_enc(LeftEncoder, temp + ticks);
 		}
 		else if (name == RightMotor)
 		{
+			// old model, needs enc array as input argument
 			printf("%s voltage = %i\n", names[name], voltage);
-			enc[name] = enc[name] + ticks;
+			//enc[name] = enc[name] + ticks;
+			//enc[1] = enc[1] + ticks;
+
+			// new model
+			temp = get_enc(RightEncoder);
+			set_enc(RightEncoder, temp + ticks);
 		}
 		else
 		{
