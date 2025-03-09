@@ -19,12 +19,14 @@ Each time motorPower is called it steps forward the called motor by 0.05s, as st
 This is perfect for testing closedloop controls where the motorPower() will be called repeatedly with constantly updated values, but not for openloop.
 
 An example will be provided below.
-> void main()
-> {
+```
+void main()
+{
     motorPower(leftMotor, 3); // commanding 3V
     delay(100); // for 100ms
     motorPower(leftMotor, 0); // stop
 }
+```
 The above PROS code is commanding 3V to the left motor for 100ms before stopping.
 An equivalent in C is provided
 dT = 0.05 // This constant is defined in "main.h", it is the V5 brain's processing frequency in seconds, so the simulation runs at the same rate.
