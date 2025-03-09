@@ -37,7 +37,7 @@ C equivalent.
 void main()
 {
     float i = 0;
-    while ( i < 0.1)
+    while ( i < 0.1 )
     {
         motorPower(leftMotor,3);
         i += dT;
