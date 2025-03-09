@@ -4,6 +4,7 @@ This Pros to C translator was made by me during my last 1-2 weeks of labs for th
 I was running out of lab sessions to test my code, so I made a simulator to test the logic of my code.
 Further developement of that led to what you see now, a near complete translator.
 What you see now is at a state that it can almost completely accept closedloop controls without modifications.
+This translator is best used for the PI controls section of the Vex project.
 
 ##    What can the Translator do presently?
 It lets you run your PROS code without the need for the robot in the lab sessions, however it does not presently have complete drop in support.
@@ -47,4 +48,5 @@ void main()
     // However, it is good practice for you to keep track of what's going on.
 }
 ```
-further development is going into supporting openloop time based driving, arm controls and lcd_print()
+further development is going into supporting drop-in openloop time based driving, arm controls and lcd_print().
+In the mean time, you will need to conver time based controls into C equivalent, replace lcd_print() with printf and skip arm controls.
