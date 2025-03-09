@@ -33,6 +33,7 @@ dT = 0.05 // This constant is defined in "main.h", it is the V5 brain's processi
 0.05 seconds = 50 milliseconds
 
 C equivalent.
+```
 void main()
 {
     float i = 0;
@@ -42,5 +43,5 @@ void main()
         i += dT;
     }
 }
-
+```
 further development is going into supporting openloop time based driving, arm controls and lcd_print()
