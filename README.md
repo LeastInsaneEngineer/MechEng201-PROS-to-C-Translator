@@ -5,14 +5,14 @@ I was running out of lab sessions to test my code, so I made a simulator to test
 Further developement of that led to what you see now, a near complete translator.
 What you see now is at a state that it can almost completely accept closedloop controls without modifications.
 
-    ## What can the Translator do presently?
+##    What can the Translator do presently?
 **It lets you your PROS code without the need for the robot in the lab sessions, however it does not presently have complete drop in support.
 Drop in support is presently limited to closedloop encoder-controlled-driving without lcd_print() becasue lcd_print() is presently unsupported.
 Ultimately, closedloop driving is what this translator was developed for.
 
 Openloop time-based-driving has no drop in support, you will need to convert the PROS code into a simulated equivalent in C.
 
-    ## How does the translator simulate the robot?
+##    How does the translator simulate the robot?
 motorPower() simulates the amount of rotation the motor will experience at a given driving voltage for a fixed time step of dT = 0.05.
 dT is a consant defined in "main.h", it is the time step that the V5 brains reacts at, so the translator iterates at the same pace as the V5 brain.
 Each time motorPower is called it steps forward the called motor by 0.05s, as stated before it **needs to be called over and over againt to simulate**.
