@@ -5,7 +5,7 @@ I was running out of lab sessions to test my code, so I made a simulator to test
 Further developement of that led to what you see now, a near complete translator.
 What you see now is at a state that it can almost completely accept closedloop controls without modifications.
 
-    ##**What can the Translator do presently?
+    ##**What can the Translator do presently?**
 **It lets you your PROS code without the need for the robot in the lab sessions, however it does not presently have complete drop in support.
 Drop in support is presently limited to closedloop encoder-controlled-driving without lcd_print() becasue lcd_print() is presently unsupported.
 Ultimately, closedloop driving is what this translator was developed for.
