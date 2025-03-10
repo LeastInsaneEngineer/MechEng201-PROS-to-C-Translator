@@ -1,4 +1,4 @@
-# MechEng201-PROS-to-C-Translator
+# MechEng201-PROS-to-C-Translator V 1.3
 Hello there MechEng 201 students
 This Pros to C translator was made by me during my last 1-2 weeks of labs for the VEX project in 2024.
 I was running out of lab sessions to test my code, so I made a simulator to test the logic of my code.
