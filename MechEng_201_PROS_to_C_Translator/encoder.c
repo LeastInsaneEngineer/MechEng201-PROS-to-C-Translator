@@ -5,7 +5,7 @@
 #include "main.h"
 
 // Static array to hold encoder values.
-static int enc[3] = {0,0,0}; // poorman's object
+static int enc[3] = { 0,0,0 }; // poorman's object
 
 // getter function, allows main.c to get the value in the array.
 int get_enc(int name)
