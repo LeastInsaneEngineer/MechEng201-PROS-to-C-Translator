@@ -59,42 +59,55 @@ void delay(int time)
 	//printf("timeStep = %f", timeStep);
 
 	// Right Motor
-	if (motorCommand[1] > 500)
+	if (abs(motorCommand[1]) > 500)
 	{
 		ticks = (900 * (1000.0 / 12.0) / 60.0 * (motorCommand[1] / 5000.0) * timeStep);
 		set_enc(RightEncoder, get_enc(RightEncoder) + ticks);
 	}
-	if (motorCommand[1] <= 500)
+	else if (abs(motorCommand[1]) <= 500 && abs(motorCommand[1]) > 0)
 	{
-		printf("Commanded Voltage too low\n");
+		printf("Commanded RVoltage too low\n");
 	}
-
+	else if (motorCommand[1] == 0)
+	{
+		//nothing
+	}
+	
 	// Left Motor
 	float gain = left_gain;
-	if (motorCommand[0] > 500)
+	if (abs(motorCommand[0]) > 500)
 	{
 		ticks = (900 * gain * (1000.0 / 12.0) / 60.0 * (motorCommand[0] / 5000.0) * timeStep);
 		set_enc(LeftEncoder, get_enc(LeftEncoder) + ticks);
 	}
-	if (motorCommand[0] <= 500)
+	else if (abs(motorCommand[0]) <= 500 && abs(motorCommand[0]) > 0)
 	{
-		printf("Commanded Voltage too low\n");
+		printf("Commanded LVoltage too low\n");
+	}
+	else if (motorCommand[0] == 0)
+	{
+		//nothing
 	}
 
 
 	// Arm Motor, not supported
-	if (motorCommand[2] > 500)
+	if (abs(motorCommand[2]) > 500)
 	{
 		// nothing
+	}
+	else if (abs(motorCommand[2]) <= 500 && abs(motorCommand[2]) > 0)
+	{
+		printf("Commanded Voltage too low\n");
+	}
+	else if (motorCommand[2] == 0)
+	{
+		//nothing
 	}
 	else
 	{
 		printf("Invalid Motor\n");
 	}
-	if (motorCommand[2] <= 500)
-	{
-		printf("Commanded Voltage too low\n");
-	}
+	
 }
 
 void motorPower(int name, int voltage)

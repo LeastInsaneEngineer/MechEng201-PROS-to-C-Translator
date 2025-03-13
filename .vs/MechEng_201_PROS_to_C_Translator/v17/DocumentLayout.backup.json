@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\background.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|solutionrelative:MechEng_201_PROS_to_C_Translator\\background.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\background.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MechEng_201_PROS_to_C_Translator\\background.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\encoder.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|solutionrelative:MechEng_201_PROS_to_C_Translator\\encoder.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\encoder.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MechEng_201_PROS_to_C_Translator\\encoder.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|solutionrelative:MechEng_201_PROS_to_C_Translator\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MechEng_201_PROS_to_C_Translator\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8BDDCF44-54E9-4A88-AB58-2153CFBFBFF1}|MechEng_201_PROS_to_C_Translator\\MechEng_201_PROS_to_C_Translator.vcxproj|solutionrelative:MechEng_201_PROS_to_C_Translator\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MechEng_201_PROS_to_C_Translator\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,8 +42,7 @@
               "RelativeToolTip": "MechEng_201_PROS_to_C_Translator\\encoder.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-10T22:36:54.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T22:36:54.645Z"
             },
             {
               "$type": "Document",
@@ -53,10 +52,9 @@
               "RelativeDocumentMoniker": "MechEng_201_PROS_to_C_Translator\\main.c",
               "ToolTip": "C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\main.c",
               "RelativeToolTip": "MechEng_201_PROS_to_C_Translator\\main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-10T22:31:17.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T22:31:17.351Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "MechEng_201_PROS_to_C_Translator\\background.c",
               "ToolTip": "C:\\Users\\Alif\\Downloads\\MechEng201-PROS-to-C-Translator\\MechEng_201_PROS_to_C_Translator\\background.c",
               "RelativeToolTip": "MechEng_201_PROS_to_C_Translator\\background.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-03-10T22:31:10.364Z",
               "EditorCaption": ""
