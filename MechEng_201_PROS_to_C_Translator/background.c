@@ -64,6 +64,10 @@ void delay(int time)
 		ticks = (900 * (1000.0 / 12.0) / 60.0 * (motorCommand[1] / 5000.0) * timeStep);
 		set_enc(RightEncoder, get_enc(RightEncoder) + ticks);
 	}
+	if (motorCommand[1] <= 500)
+	{
+		printf("Commanded Voltage too low\n");
+	}
 
 	// Left Motor
 	float gain = left_gain;
@@ -72,6 +76,11 @@ void delay(int time)
 		ticks = (900 * gain * (1000.0 / 12.0) / 60.0 * (motorCommand[0] / 5000.0) * timeStep);
 		set_enc(LeftEncoder, get_enc(LeftEncoder) + ticks);
 	}
+	if (motorCommand[0] <= 500)
+	{
+		printf("Commanded Voltage too low\n");
+	}
+
 
 	// Arm Motor, not supported
 	if (motorCommand[2] > 500)
@@ -81,6 +90,10 @@ void delay(int time)
 	else
 	{
 		printf("Invalid Motor\n");
+	}
+	if (motorCommand[2] <= 500)
+	{
+		printf("Commanded Voltage too low\n");
 	}
 }
 
